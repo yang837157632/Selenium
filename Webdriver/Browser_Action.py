@@ -2,8 +2,11 @@ from  selenium import webdriver
 from time import sleep
 
 driver=webdriver.Firefox()
+# driver=webdriver.Chrome()
+# driver=webdriver.Ie()
 
 driver.get("http://www.51zxw.net")
+print(driver.title)
 driver.maximize_window()
 sleep(2)
 

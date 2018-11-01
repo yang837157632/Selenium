@@ -16,7 +16,7 @@ def get_image(html):
     num=1
     for img in  get_image:
         image=load_page(img)
-        with open('%s.jpg' %num,'wb') as fb:
+        with open('school\\%s.jpg' %num,'wb') as fb:
             fb.write(image)
             print("正在下载第%s张图片" %num)
             num=num+1
