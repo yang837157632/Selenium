@@ -11,11 +11,13 @@ class Test_StartEnd(unittest.TestCase):
 class Testadd(Test_StartEnd):
     def test_add(self):
         j=Math(5,5)
+        print("Testadd")
         self.assertEqual(j.add(),10)
 
 class Testsub(Test_StartEnd):
     def test_sub(self):
         i=Math(10,5)
+        print("Testsub")
         self.assertEqual(i.sub(),5)
 
 if __name__ == '__main__':

@@ -15,17 +15,17 @@ class TestAssert(unittest.TestCase):
         print("assertNotEqual")
         self.assertNotEqual(j.add(),12)
 
-    def assertTrue_test(self):
+    def test_assertTrue(self):
         j=Math(5,10)
         print("assertTrue")
         self.assertTrue(j.add()>10)
 
-    def assertIn_test(self):
+    def test_assertIn(self):
         print("assertIn")
         self.assertIn("51zxw","hello,51zxw")
         # self.assertIn("888","hello,51zxw")
 
-    def assetIs_test(self):
+    def test_assetIs(self):
         print("assertIs")
         self.assertIs("51zxw","51zxw")
         # self.assertIs("51","51zxw")
@@ -34,15 +34,5 @@ class TestAssert(unittest.TestCase):
         print("test end")
 
 if __name__=='__main__':
-    suite=unittest.TestSuite()
-    suite.addTest(TestAssert("test_add"))
-    suite.addTest(TestAssert("test_add1"))
-    suite.addTest(TestAssert("assertTrue_test"))
-    suite.addTest(TestAssert("assertIn_test"))
-    suite.addTest(TestAssert("assetIs_test"))
-
-    runer=unittest.TextTestRunner()
-    runer.run(suite)
-
-    # unittest.main()
+    unittest.main()
 

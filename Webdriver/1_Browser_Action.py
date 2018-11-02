@@ -1,7 +1,12 @@
 from  selenium import webdriver
 from time import sleep
+import os
 
-driver=webdriver.Firefox()
+driverpath=os.path.join(os.getcwd(), "Driver\\geckodriver.exe")
+print(driverpath)
+driver = webdriver.Firefox(executable_path=driverpath)
+
+# driver=webdriver.Firefox()
 # driver=webdriver.Chrome()
 # driver=webdriver.Ie()
 

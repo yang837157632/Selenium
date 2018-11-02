@@ -27,13 +27,5 @@ class Test2(unittest.TestCase):
 
 
 if __name__ == '__main__':
-    # unittest.main()
-    suite=unittest.TestSuite()
-    suite.addTest(Test2("test_d"))
-    suite.addTest(Test1("test_b"))
-    suite.addTest(Test2("test_a"))
-    suite.addTest(Test1("test_c"))
-
-    runner=unittest.TextTestRunner()
-    runner.run(suite)
+    unittest.main()
 
